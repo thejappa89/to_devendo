@@ -1,5 +1,3 @@
-# CONTROLE DE EMPRESTIMO PESSOAL
-
 base_emprestimo = 500
 base_juros = 15
 
@@ -27,4 +25,9 @@ DETALHAMENTO MENSAL DE PAGAMENTOS
         {} capital
      
       Saldo atualizado: {}
-      '''.format(saldo_anterior, vlr_pago, vlr_juros, vlr_capital, saldo_atual))
+      '''.format(saldo_anterior,
+                 vlr_pago,
+                 vlr_juros,
+                 vlr_capital,
+                 saldo_atual
+                 ))
