@@ -1,3 +1,6 @@
+import jappalib.visual
+
+
 base_emprestimo = 500
 base_juros = 15
 
@@ -23,7 +26,6 @@ DETALHAMENTO MENSAL DE PAGAMENTOS
       Valor pago: R$ {}
         {} juros
         {} capital
-     
       Saldo atualizado: {}
       '''.format(saldo_anterior,
                  vlr_pago,
@@ -31,3 +33,18 @@ DETALHAMENTO MENSAL DE PAGAMENTOS
                  vlr_capital,
                  saldo_atual
                  ))
+
+# MENU PRINCIPAL
+while True:
+    resp = jappalib.visual.menu(['Adicionar pagamento',
+                                 'Consultar extrato',
+                                 'Sair...'])
+
+    if resp == 1:
+        print('Adicionar pagamento')
+    elif resp == 2:
+        print('Consultar pagamento')
+    elif resp == 3:
+        print('Saindo...')
+    else:
+        print('\033[mERRO: Opção inválida! Tente novamente.\033[m')
