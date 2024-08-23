@@ -28,3 +28,4 @@ def menu(lista, msg='MENU PRINCIPAL'):
     linha()
     opc = leiaint('Sua opção: ')
     return opc
+    linha()
