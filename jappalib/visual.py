@@ -13,9 +13,9 @@ def leiaint(caracteres):
         try:
             num = int(input(caracteres))
         except (ValueError, TypeError):
-            print('\033[31mERRO: Por favor, digite um número inteiro válido!\33[m]]')
+            print('ERRO: Por favor, digite um número inteiro válido')
         except KeyboardInterrupt:
-            print('\033[31m\nEntrada de lib interrompida pelo usuário\033[m')
+            print('ERRO: Entrada interrompida pelo usuário.')
             return 0
         else:
             return num
