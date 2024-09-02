@@ -15,8 +15,7 @@ saldo_atual = saldo_anterior - vlr_capital
 # MENU PRINCIPAL
 while True:
 	resp = jappalib.visual.menu(['Dados do emprestimo', 'Adicionar pagamento',
-								 'Extrato detalhado',
-								 'Sair...'])
+								 'Extrato detalhado', 'Configurar', 'Sair...'])
 
 	if resp == 1:
 		jappalib.visual.titulo('DADOS DO EMPRÉSTIMO')
@@ -32,6 +31,10 @@ while True:
 		sleep(2)
 	
 	elif resp == 4:
+		jappalib.visual.titulo('CONFIGURAR EMPRESTIMO')
+		sleep(2)
+	
+	elif resp == 5:
 		print('Encerrando o sistema, aguarde!')
 		sleep(2)
 		print('Finalizado com sucesso!')
