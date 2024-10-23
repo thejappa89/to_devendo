@@ -1,4 +1,4 @@
-import jappalib.visual
+import jappalib.interface
 from time import sleep
 
 
@@ -14,24 +14,24 @@ saldo_atual = saldo_anterior - vlr_capital
 
 # MENU PRINCIPAL
 while True:
-	resp = jappalib.visual.menu(['Dados do emprestimo', 'Adicionar pagamento',
+	resp = jappalib.interface.menu(['Dados do emprestimo', 'Adicionar pagamento',
 								 'Extrato detalhado', 'Configurar', 'Sair...'])
 
 	if resp == 1:
-		jappalib.visual.titulo('DADOS DO EMPRÉSTIMO')
+		jappalib.interface.titulo('DADOS DO EMPRÉSTIMO')
 		print('Valor: R$ {} reais\nJuros: {}%\n'.format(base_emprestimo, base_juros))
 		sleep(2)
 	
 	elif resp == 2:
-		jappalib.visual.titulo('ADICIONAR PAGAMENTO')
+		jappalib.interface.titulo('ADICIONAR PAGAMENTO')
 		sleep(2)
 	
 	elif resp == 3:
-		jappalib.visual.titulo('EXTRATO DETALHADO')
+		jappalib.interface.titulo('EXTRATO DETALHADO')
 		sleep(2)
 	
 	elif resp == 4:
-		jappalib.visual.titulo('CONFIGURAR EMPRESTIMO')
+		jappalib.interface.titulo('CONFIGURAR EMPRESTIMO')
 		sleep(2)
 	
 	elif resp == 5:
